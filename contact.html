@@ -18,7 +18,7 @@
     main .container {
     position: relative;
     width: 900px;
-    height: 284px;
+    height: 243px;
     left: 73px;
 }
 
@@ -30,18 +30,21 @@
     height: 40px;
     position: relative;
     top: 52px;
-    right: 2px;
+    border-radius: 8px;
+    
     padding: 6px;
     margin-bottom: 82px;
 }
+    .container .contenu{
+        margin-top: -16px;
+    }
 
    
   
         
         form {
             max-width: 700px;
-            margin: 0 auto;
-            
+            margin: 0 17%;
             padding: 20px;
             border-radius: 8px;
         }
@@ -104,6 +107,7 @@
         .btn {
             display: flex;
             justify-content: end;
+            margin-top: -30px;
         }
         
         button:hover {
@@ -115,6 +119,10 @@
             color: #888;
             text-align: center;
             margin-top: 10px;
+        }
+
+        .contenu span{
+            color: #0056b3;
         }
     </style>
 </head>
@@ -145,7 +153,7 @@
          </div>
          <div class="contenu">
             <h1>GOT AN COOL IDEA ? FIND A <br>
-                BUG? SEND IT TO US!
+                BUG? <span>SEND IT TO US!</span>
             </h1>
          </div>
     </div>
@@ -155,19 +163,17 @@
         <div class="form-container">
             <div class="left-column">
                 <div class="form-row">
-                    <label for="nom">Full name</label>
                     <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
                 </div>
                 
                 <div class="form-row">
-                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="example@email.com" required>
                 </div>
             </div>
             
             <div class="right-column">
                 <div class="form-row">
-                    <label for="message">Enter your message</label>
+                    
                     <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
                 </div>
             </div>
